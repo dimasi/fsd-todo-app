@@ -1,5 +1,7 @@
 # fsd-todo-app
 
+[Demo](http://fsd-todo-app.dimasi.online/)
+
 Todo list app created with [FSD-methodology](https://feature-sliced.design/).
 
 ## Project setup
