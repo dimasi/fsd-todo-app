@@ -1,19 +1,25 @@
-import HomeView from './home-view';
 import Routing from './index.vue';
 
 export const routes = [
   {
     path: '/',
-    name: 'home',
-    component: HomeView,
+    name: 'tasks-list',
+    component: () => import(/* webpackChunkName: "tasks-list" */ './tasks-list'),
   },
   {
-    path: '/about',
-    name: 'about',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ './about-view'),
+    path: '/new-task',
+    name: 'new-task',
+    component: () => import(/* webpackChunkName: "new-task" */ './new-task'),
+  },
+  {
+    path: '/task/:taskId',
+    name: 'task-details',
+    component: () => import(/* webpackChunkName: "edit-task" */ './task-details'),
+  },
+  {
+    path: '/edit-task/:taskId',
+    name: 'edit-task',
+    component: () => import(/* webpackChunkName: "edit-task" */ './edit-task'),
   },
 ];
 

@@ -1,0 +1,9 @@
+.page-edit-task {
+  position: relative;
+  z-index: 1;
+  text-align: left;
+
+  &__body {
+    padding: 10px;
+  }
+}

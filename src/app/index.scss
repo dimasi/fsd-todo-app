@@ -1,22 +1,27 @@
 @import "./styles/index.scss";
 
-#app {
+.app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+  color: var(--vs-dark);
 
-nav {
-  padding: 30px;
-}
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .13);
+  }
 
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
+  &__title {
+    font-size: 18px;
+    font-weight: 600;
+  }
 
-nav a.router-link-exact-active {
-  color: #42b983;
+  &__nav {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
 }

@@ -1,9 +1,31 @@
 <template>
-  <div id="app">
-    <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </nav>
+  <div class="app" id="app">
+    <div class="app__header">
+      <div class="app__title">FSD Tasks App</div>
+
+      <div class="app__nav">
+        <vs-button
+          color="dark"
+          icon="list"
+          size="small"
+          to="/"
+          type="border"
+        >
+          Tasks List
+        </vs-button>
+
+        <vs-button
+          color="success"
+          icon="add"
+          size="small"
+          to="/new-task"
+          type="border"
+        >
+          Add Task
+        </vs-button>
+      </div>
+    </div>
+
     <Routing />
   </div>
 </template>

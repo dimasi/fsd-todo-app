@@ -1,0 +1,21 @@
+.task-row {
+  padding: 8px 10px 8px 5px;
+  background: #fff;
+  border-bottom: 1px solid #eaeaea;
+
+  &__title {
+    margin-right: auto;
+    color: var(--vs-dark);
+    font-size: 0.8rem;
+  }
+
+  &__edit-link {
+    margin-right: 5px;
+  }
+
+  &._completed {
+    .task-row__title {
+      text-decoration: line-through;
+    }
+  }
+}
