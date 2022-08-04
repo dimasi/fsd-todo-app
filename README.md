@@ -1,6 +1,6 @@
 # fsd-todo-app
 
-Todo list app created with FSD-methodology.
+Todo list app created with [FSD-methodology](https://feature-sliced.design/).
 
 ## Project setup
 ```
